@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 class CarouselAsset extends AssetBundle {
 
     public $js = [
-        'js/carousel.js'
+        'carousel.js'
     ];
     
     public $depends = [
