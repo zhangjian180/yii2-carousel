@@ -13,7 +13,8 @@ use yii\web\AssetBundle;
 class CarouselAsset extends AssetBundle {
 
     public $js = [
-        'carousel.js'
+        'carousel.js',
+        'holder.min.js'
     ];
     
     public $depends = [
@@ -25,7 +26,7 @@ class CarouselAsset extends AssetBundle {
      */
     public function init()
     {
-        $this->setSourcePath(__DIR__ . '/assets');
+        $this->sourcePath = __DIR__ . '/assets';
         parent::init();
     }
 }

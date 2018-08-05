@@ -34,6 +34,7 @@ Once the extension is installed, simply use it in your code by  :
         'width' => '104',
         'height' => '40'
     ],
+    /* 默认图 */
     'defaultDataSrc' => 'holder.js/104x40',
     'myCarouselIdName' => 'myCarousel',
     'myCarouselStyle' => 'width:104px !important; margin:0 auto;'

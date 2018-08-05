@@ -125,7 +125,7 @@ HTML;
         });
 JS;
         $view = $this->getView();
-        $view->registerJsFile('/js/holder.min.js', ['position' => View::POS_END]);
+        CarouselAsset::register($view);
         $view->registerJs($js);
     }
 }
