@@ -8,7 +8,7 @@ use yii\web\View;
 use yii\helpers\Html;
 
 /**
- * 列表页多图轮播展示小部件
+ * 支持单个或多个（列表）多图轮播展示小部件
  *
  * ```php
  * echo Carousel::widget([

@@ -1,6 +1,6 @@
 多图轮播
 ====
-支持单个或多个（列表）多图轮播展示
+支持单个或多个（列表）多图轮播展示小部件
 
 Installation
 ------------
@@ -28,4 +28,13 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \zhangjian180\carousel\AutoloadExample::widget(); ?>```
+<?= \zhangjian180\carousel\Carousel::widget([
+    'imagesData' => ['http://...01.png', 'http://...02.png'],
+    'imagesConfig' => [
+        'width' => '104',
+        'height' => '40'
+    ],
+    'defaultDataSrc' => 'holder.js/104x40',
+    'myCarouselIdName' => 'myCarousel',
+    'myCarouselStyle' => 'width:104px !important; margin:0 auto;'
+]); ?>```
