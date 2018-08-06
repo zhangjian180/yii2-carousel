@@ -91,7 +91,7 @@ class Carousel extends Widget
     public function setHtml()
     {
         $html = '';
-        if ($this->imagesData) {
+        if ($this->imagesData && is_array($this->imagesData)) {
             $imgHtml = $controlHtml = '';
             foreach ($this->imagesData as $key => $val) {
                 $imgHtml .= Html::tag('div', Html::a(Html::img($val,
@@ -99,6 +99,7 @@ class Carousel extends Widget
                     $val, ['target' => '_blank']), ['class' => 'item ' . ($key == 0 ? 'active' : '')]);
             }
 
+            count($this->imagesData) == 1 && $this->isShowControl = false;
             $this->isShowControl === true && $controlHtml = <<<HTML
                 <a class="left carousel-control" href="#{$this->myCarouselIdName}" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
