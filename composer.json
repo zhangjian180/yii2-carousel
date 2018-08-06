@@ -1,6 +1,6 @@
 {
     "name": "zhangjian180/yii2-carousel",
-    "description": "支持单个或多个（列表）多图轮播展示",
+    "description": "Bootstrap carousel widget for Yii 2 framework",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","carousel","widget"],
     "license": "Apache-2.0",
